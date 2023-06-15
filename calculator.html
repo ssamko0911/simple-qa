@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+<!--------Start of Head----------------------------------------------->
+<head>
+    <title>Calculator</title>
+    <script type="text/javascript" src="app/gallery.js"></script>
+    <link href="CSS/calcCSS.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<!---------End of Head----------------->
+
+<!----*************BODY**************---------------------------------->
+<body>
+<!---------Start of Banner------------>
+<header id="banner">
+    <h1>Graeme Watson's Calculator</h1>
+</header>
+<!---------End of Banner-------------->
+
+<nav>
+    <ul>
+        <li><a href="index.html" title="This is the main page">Home</a></li>
+        <li><a href="gallery.html" title="This is the gallery page">Gallery</a></li>
+        <li><a href="https://www.google.com"
+               title="Just if you need a wee look for smth..."
+               target="_blank">Search Engine</a></li>
+        <li><a href="calculator.html"
+               title="It's time to make some calculations!"
+        >Calculator</a></li>
+        <li><a href="#">Help</a></li>
+    </ul>
+</nav>
+
+<div id="wrapper">      <!--Div for Wrapper---------------------------->
+    <!---------------------->
+    <h2 id="pageT">Mini Calculator App</h2><br>
+    <div id="pTog"><!--Div for putting it all together panel -->
+        <div id="shadow">
+            <div id="calculator"><!--Div for calculator -->
+                <div id="dispPanel">
+                    <input id="ip" type="text" readonly size="18">
+                </div><!-- End of dispPanel -->
+                <p><br><br><br></p>
+                <div id="keys">
+                    <hr/>
+                    <p>
+                        <input type="button" class="noB" value="1" onclick='append("1")'>
+                        <input type="button" class="noB" value="2" onclick='append("2")'>
+                        <input type="button" class="noB" value="3" onclick='append("3")'>
+                        <input type="button" class="calc" value="+" onclick='append("+")'></p>
+                    <p>
+                        <input type="button" class="noB" value="4" onclick='append("4")'>
+                        <input type="button" class="noB" value="5" onclick='append("5")'>
+                        <input type="button" class="noB" value="6" onclick='append("6")'>
+                        <input type="button" class="calc" value="-" onclick='append("-")'></p>
+                    <p>
+                        <input type="button" class="noB" value="7" onclick='append("7")'>
+                        <input type="button" class="noB" value="8" onclick='append("8")'>
+                        <input type="button" class="noB" value="9" onclick='append("9")'>
+                        <input type="button" class="calc" value="*" onclick='append("*")'></p>
+                    <p>
+                        <input type="button" class="noB" value="0" onclick='append("0")'>
+                        <input type="button" class="noB" value="." onclick='append(".")'>
+                        <input type="button" class="noB" value="C" onclick='clearScrn("")'>
+                        <input type="button" class="calc" value="/" onclick='append("/")'></p>
+                    <hr/>
+                    <br>
+                    <p><input type="button" class="eqls" value="=" onclick='evaluateScrn()'></p>
+
+                    <p><input type="button" class="mem" value="Mem +" onclick='addToMem()'>
+                        <input type="button" class="mem" value="M Recall" onclick='recallMem()'>
+                        <input type="button" class="mem" value="M Clear" onclick='clearMem()'></p>
+                </div><!--End of Keys -->
+            </div><!--End of calculator -->
+        </div><!--End of shadow -->
+    </div><!--End of pTog-->
+</div><!-- End of wrapper -->
+</body>
+</html>
