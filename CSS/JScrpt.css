@@ -1,0 +1,71 @@
+/* --------------Initialise Browsers ----------------------- */
+html, body { margin: 0; padding: 0; border: 0;  
+				background-color:#338866; font-size:14px; font-family: Arial, Helvetica, sans-serif;  }
+
+div, span, article, aside, footer, header, hgroup, nav, section,
+h1, h2, h3, h4, h5, h6, p, blockquote, a, ol, ul, li, 
+table, tr, th, td, tbody, tfoot, thead {
+	margin: 0;
+	padding:0;
+	border:0;
+	vertical-align: baseline;
+	background: transparent;
+	}
+
+img 	{ margin:0; padding:0; border:0; }
+	
+table, th, td { border: 1px solid black;}
+	
+ input, select, textarea, form, fieldset { width: auto;
+	margin: 5px; 
+	} 
+
+article, aside, dialog, figure, footer, header, hgroup, nav, section { 
+	display:block; }
+/*
+h1, h2, h3, h4, h5, h6, p, li, blockquote, td, th, a, caption, em, strong, strike { 
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:100%;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 100%; 
+	text-indent: 0;
+	text-decoration: none;
+	text-align: left;
+	color: #000;
+	}*/
+
+ol, ul { list-style: none; }
+
+/* ############################################################################# */
+/* ----All of above is simply initialisation to alter out browser defaults------ */
+/* ############################################################################# */
+
+#banner{ 
+width:900px; height:150px; margin: 0px auto; overflow:hidden; 
+background: url(../img/code.jpg) repeat;
+animation: animate-background linear 45s infinite;
+}
+@keyframes animate-background {
+from { background-position: 0px 0px;}
+to{ background-position: -300px 300px;}
+}
+
+h1 {width: 890px; background-color: #09163a; padding:5px; font-size: 28px; font-family: Arial; color:#FFF}
+
+nav { margin: 0px auto; width:900px; background-color:#09163a; clear:both;}
+nav ul { width:100%; float:left; margin:0px; background-color:#09163a; border-bottom: 3px #338866 solid;}
+nav ul li { display:inline;}
+nav ul li a { float:left; padding:10px 20px 10px 20px; }
+nav a:link { color:white;}
+nav a:visited { color:white;}
+nav a:active { color:white;}
+nav a:hover { color:white; background-color:#00CC66}
+nav a:focus { color:white;}
+
+
+div {background-color: #FFF; width:880px ; padding:10px; height: auto; margin:0px auto;}
+h2 {color: #062F50; font-size: 24px; font-family: Arial; font-weight: bold; padding:20px}
+p {color: black; font-size: 18px; font-family: Arial; padding-left: 20px}
+#errors {width:880px ; height: 100px}
+

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+</html>
+<head>
+<title>Javascript</title>
+<script type="text/javascript" src ="app/app.js"></script>
+<link href="CSS/JScrpt.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<header id="banner">
+<h1>Judy's Javascript Page - Graeme Watson</h1>
+</header>
+<nav>
+<ul>
+  <li><a href="index.html" title="This is the main page">Home</a></li>
+  <li><a href="gallery.html" title="This is the gallery page">Gallery</a></li>
+  <li><a href="javascriptPage.html" title="This is samples of JS functionality"
+    onclick="alert('Thanks Graeme for the class!!!')";
+  >JavaScript</a></li>
+  <li><a href="https://www.google.com"
+         title="Just if you need a wee look for smth..."
+         target="_blank">Search Engine</a></li>
+  <li><a href="calculator.html"
+         title="It's time to make some calculations!"
+  >Calculator</a></li>
+  <li><a href="https://www.w3schools.com"
+         title="Everything you need is here!"
+         target="_blank"
+  >Help</a></li>
+</ul>
+</nav>
+<div>
+<br><h2>An HTML Table</h2>
+<table id="tbl">
+  <tr>
+    <th>Pet</th>
+    <th>Breed</th> 
+    <th>Pet's Age</th>
+  </tr>
+  <tr>
+    <td>Smokie</td>
+    <td>Rabbit</td> 
+    <td>6 mths</td>
+  </tr>
+  <tr>
+    <td>Bonzo</td>
+    <td>Dog</td> 
+    <td>2 years</td>
+  </tr>
+</table>
+<br>
+<img width="250px" src="img/tbl.jpg" ><br>
+<hr>
+</div>
+<div id="Add">
+<h2>Adding two numbers</h2>
+Input a Number = <input type="text" id="inputField1"  value="1"/>
+Input a Second Number = <input type="text" id="inputField2"  value="2"/><br>
+<br><input type="button"  value="Add Numbers" onclick="addNumbers()"/>
+Answer = <input type="text" id="answer" value ="" /><br><br>
+<img width="600px" src="img/add.jpg" ><br>
+<hr>
+</div>
+<div id="outPan">
+<br><br>
+<h2>For Loop</h2><br><br>
+<p>We have declared an array and will loop through it</p><br><br>
+<img id="loop" src="img/Loop.jpg" ><br>
+<input type="button"  value="Loop Array" onclick="myForLoop()" />
+</div>
+<div id="toggle">
+<h2>Toggle an image</h2> 
+<img id="pic" src="img/spike.png" onclick="swapImage(this)"><br>
+<img width="600px" src="img/tog.jpg" >
+<hr>
+</div>
+<div id="exceptHand">
+<h2>Handling Exceptions</h2> 
+<img width="800px" src="img/Validation.jpg" ><br>
+Enter your e-mail address = <input type="text" id="emlAdd"  value=""/>
+<input type="button"  value="Submit" onclick="checkEmail()"/>
+</div>
+<div id="errors">
+</div>
+<div>
+<hr>
+<br>
+<h2>Store Data</h2><br>
+<img width="600px" src="img/StoreRetrieve.jpg" ><br>
+<fieldset>
+<legend id = "leg" ><h4>Enter Name</h4></legend>
+<input id = "username" type = "text" >
+<button id = "store" >Store Name</button>
+<button id = "recall" >Recall Name</button>
+<button id = "remove" >Remove Name</button>
+<button id = "reset" >Reset</button>
+</fieldset>
+<hr>
+</div>
+<div>
+<h2>Using a Switch statement</h2>
+<p>A switch statement can be used to replace the need for a number of nested "if" statements.</p><br>
+<p>ie: where data must be tested against a number of possible choices.</p><br>
+<img width="600px" src="img/Switch.jpg" ><br>
+<br>
+<b>Please enter a number between 1 and 3...</b>
+<input type="text" id="pass"  value=""/>
+<input type="button"  value="Check" onclick="smallNumber()"/>
+</div>
+<div id = "ans">
+<h4>Answer</h4>
+</div>
+</body>
+</html>
