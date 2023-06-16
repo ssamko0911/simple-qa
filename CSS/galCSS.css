@@ -185,3 +185,14 @@ img {
 #another-banner h1 {
     color: white;
 }
+
+.my-link {
+    color: white;
+    text-decoration: none;
+}
+
+.my-link:hover {
+    color: blueviolet;
+    font-weight: bold;
+    text-decoration: underline dashed blueviolet;
+}
